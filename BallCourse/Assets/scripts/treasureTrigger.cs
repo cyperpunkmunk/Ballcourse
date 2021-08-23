@@ -5,6 +5,8 @@ using UnityEngine;
 public class treasureTrigger : MonoBehaviour
 {
 
+    
+
     public bool fadeOut;
    
     
@@ -24,6 +26,7 @@ public class treasureTrigger : MonoBehaviour
          
         if(fadeOut)
         {
+           
             Debug.Log("fadeOut");
             fadeOut = false;
         }

@@ -750,7 +750,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1265790988}
   - component: {fileID: 1265790990}
-  - component: {fileID: 1265790989}
   m_Layer: 0
   m_Name: objectTrigger
   m_TagString: Untagged
@@ -772,19 +771,6 @@ Transform:
   m_Father: {fileID: 1791768104}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1265790989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265790987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced49d40f03a3ee43aff63ddc88028aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeOut: 0
 --- !u!65 &1265790990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -839,7 +825,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791768104}
-  - component: {fileID: 1791768105}
   m_Layer: 0
   m_Name: Treasure
   m_TagString: Untagged
@@ -863,18 +848,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1791768105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791768103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0165e7b3d9cb36c4db4535aa814e76ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1813706185
 GameObject:
   m_ObjectHideFlags: 0

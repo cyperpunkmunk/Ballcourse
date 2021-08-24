@@ -7,9 +7,15 @@ public class treasureTrigger : MonoBehaviour
 
     
 
-    public bool fadeOut;
+    public bool fadeOut = false;
    
     
+
+    void Update()
+    {
+         
+    }
+
 
     public void OnTriggerEnter(Collider Player)
     {
@@ -18,17 +24,16 @@ public class treasureTrigger : MonoBehaviour
 
         Debug.Log("you found an object");
         
-        triggerListen();
+        triggerListenToDelete();
 
     }
 
-    public void triggerListen(){
+    public void triggerListenToDelete(){
          
         if(fadeOut)
         {
-           
-            Debug.Log("fadeOut");
-            fadeOut = false;
+           Destroy(GetComponent<Rigidbody>());
+            
         }
 
     }

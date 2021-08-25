@@ -13,18 +13,16 @@ public class treasureTrigger : MonoBehaviour
 
     void Update()
     {
-         
+        triggerListenToDelete();
     }
 
 
     public void OnTriggerEnter(Collider Player)
     {
-        
-        fadeOut = true;
 
         Debug.Log("you found an object");
         
-        triggerListenToDelete();
+        fadeOut = true;
 
     }
 
@@ -32,8 +30,10 @@ public class treasureTrigger : MonoBehaviour
          
         if(fadeOut)
         {
-           Destroy(GetComponent<Rigidbody>());
             
+            Debug.Log("item gone");
+            Destroy(gameObject);
+            fadeOut = false;
         }
 
     }

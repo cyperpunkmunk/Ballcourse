@@ -749,9 +749,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1475258622}
+  - component: {fileID: 1475258623}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: gameCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -772,6 +773,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1475258623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475258621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f036f6a1f3ba33147b52c3316ce64a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureCount: 0
 --- !u!1 &1813706185
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,5 +940,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3113370305356955841, guid: 46c741c5cd979994aa5f631d6e26da49,
+        type: 3}
+      propertyPath: gameCount
+      value: 
+      objectReference: {fileID: 1475258621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c741c5cd979994aa5f631d6e26da49, type: 3}

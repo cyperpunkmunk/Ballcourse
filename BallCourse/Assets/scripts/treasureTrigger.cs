@@ -2,14 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class treasureTrigger : MonoBehaviour
 {
 
-    
+    public GameObject gameCount;
+
+    private treasureCollection trCount;
+
+
 
     public bool fadeOut = false;
    
     
+    public void Start()
+    {
+        gameCount.GetComponent<treasureCollection>();
+
+    }
+
 
     void Update()
     {
@@ -22,6 +33,8 @@ public class treasureTrigger : MonoBehaviour
 
         Debug.Log("you found an object");
         
+        trCount.treasureCount ++;
+
         fadeOut = true;
 
     }
@@ -30,8 +43,7 @@ public class treasureTrigger : MonoBehaviour
          
         if(fadeOut)
         {
-            
-            Debug.Log("item gone");
+            Debug.Log(trCount.treasureCount);
             Destroy(gameObject);
             fadeOut = false;
         }

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class grassLand : MonoBehaviour
+
+public class villageSwitch : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+  private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("grassyNew");
+        SceneManager.LoadScene("village");
         
     }
 }
